@@ -1,24 +1,31 @@
+# TODO LIST
+
 d = declare ( create a variable )
-	i = int				OK
-	f = float
-	s = str				OK
-	b = bool			OK
+* `i = int`				✓
+* `f = float`
+* `s = str`				✓
+* `b = bool`            ✓
+
 i = input
 o = output
-	p = print			OK
-	v = variable
+* `p = print`			✓
+* `v = variable`
+	
 a = arithmetic
 l = loops
-	i = if
-	w = while
+* `i = if`
+* `w = while`
 
-Specific syntaxes :
+Specific syntaxes :
+
 	di:name,value.
 	ov:name.
+	
 	li:name,operation;
 		trucs
 		machins
 	.
 
-Escape character (\)	OK
-Comments (#)			OK
+Other :
+* `Escape character (\)`	✓
+* `Comments (#)`			✓
