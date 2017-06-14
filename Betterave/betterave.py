@@ -85,6 +85,26 @@ def parse():
         if index == -1:
             print("Unmatched comment!")
             sys.exit(1)
+    elif source[index] == ':':
+        return int(input())
+    elif source[index] == ';':
+        strings.append(input())
+        return len(strings) - 1
+    elif source[index] == '&':
+        strings[parse()] += str(chr(parse()))
+    elif source[index] == '#':
+        strings[parse()] += str(parse())
+    elif source[index] == '_':
+        tmp = parse()
+        del(strings[tmp])
+        return tmp
+    elif source[index] == '\\':
+        tmp = parse()
+        tmp1 = strings[tmp]
+        strings[tmp] = tmp1[1:]
+        return ord(tmp1[0])
+    else:
+        return parse()
     
 
 if len(sys.argv) > 1:
